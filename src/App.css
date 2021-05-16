@@ -28,7 +28,7 @@
 *:focus {
   outline: 2px;
   outline-style: dashed;
-  outline-color: #64ffda;
+  outline-color: var(--primary-2);
 }
 
 a {
@@ -38,7 +38,7 @@ a {
 main {
   margin: 0;
   padding: 0 25px;
-  font-family: 'SF Pro Regular';
+  font-family: var(--sf-pro-bold);
 }
 
 .skip-to-content {
@@ -47,11 +47,11 @@ main {
   top: 0;
   left: -100%;
   padding: 15px 20px;
-  background-color: #64ffda;
-  color: #0a192f;
+  background-color: var(--primary-2);
+  color: var(--bg-primary-1);
   font-size: .85em;
   border-radius: 5px;
-  font-family: 'SF Mono';
+  font-family: var(--sf-mono);
   min-height: 44px;
   -webkit-transition: .4s ease;
   transition: .4s ease;
@@ -66,39 +66,39 @@ main {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 5px;
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
   letter-spacing: 1px;
 }
 
 .btn.btn-primary {
-  background-color: #64ffda;
-  color: #0a192f;
-  border: 2px solid #64ffda;
+  background-color: var(--primary-2);
+  color: var(--bg-primary-1);
+  border: 2px solid var(--primary-2);
 }
 
 .btn.btn-primary:hover {
-  background-color: #00fdc1;
+  background-color: var(--primary-1);
 }
 
 .btn.btn-primary.btn-outline {
   background-color: transparent;
-  color: #64ffda;
+  color: var(--primary-2);
 }
 
 .btn.btn-primary.btn-outline:hover {
-  background-color: #1a2e4b;
+  background-color: var(--bg-secondary-1);
 }
 
 .random {
   height: 1600px;
   width: 100%;
-  background-color: #0a192f;
+  background-color: var(--bg-primary-1);
 }
 
 .random:after {
   content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for will uncover';
   display: block;
-  color: #64ffda;
+  color: var(--primary-2);
 }
 /*# sourceMappingURL=App.css.map */

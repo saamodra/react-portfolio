@@ -4,23 +4,31 @@ import "./Navbar.css";
 
 function Navbar() {
     const [showNav, setShowNav] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const handleNavClick = () => setShowNav(!showNav);
-    const closeNav = () => setShowNav(false);
+    const closeNav = (event) => setShowNav(false);
+
+    window.addEventListener('scroll', (event) => {
+        const windowPosition = window.scrollY;
+        const isScrolled = windowPosition > 50;
+
+        setScrolled(isScrolled);
+    });
 
     return (
         <>
-            <nav className="navbar">
+            <nav className={`navbar ${scrolled ? 'box-shadow' : ''}`}>
                 <Link to="/" className="nav-link">
-                    <img src="/wm-tosca.png" alt="" className="nav-logo" />
+                    <img src="/wm-red-2.png" alt="" className="nav-logo" />
                 </Link>
 
                 <ul className="nav-items">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#about">Education</a></li>
-                    <li><a href="#about">Certification</a></li>
-                    <li><a href="#about">Projects</a></li>
-                    <li><a href="#about">Contact Me</a></li>
+                    <li><Link to="#about">About</Link></li>
+                    <li><Link to="#education">Education</Link></li>
+                    <li><Link to="#certification">Certification</Link></li>
+                    <li><Link to="#projects">Projects</Link></li>
+                    <li><Link to="#contact">Contact Me</Link></li>
                 </ul>
 
                 <div className="menu-icon">
@@ -31,11 +39,11 @@ function Navbar() {
 
                 <aside aria-hidden={!showNav} tabIndex="-1" className={`aside-nav ${showNav ? 'active' : ''}`}>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#about">Education</a></li>
-                        <li><a href="#about">Certification</a></li>
-                        <li><a href="#about">Projects</a></li>
-                        <li><a href="#about">Contact Me</a></li>
+                        <li><Link to="#about" onClick={closeNav}>About</Link></li>
+                        <li><Link to="#education" onClick={closeNav}>Education</Link></li>
+                        <li><Link to="#certification" onClick={closeNav}>Certification</Link></li>
+                        <li><Link to="#projects" onClick={closeNav}>Projects</Link></li>
+                        <li><Link to="#contact" onClick={closeNav}>Contact Me</Link></li>
                     </ul>
                 </aside>
             </nav>
