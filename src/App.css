@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'SF Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display"), url("fonts/sf-pro/SF-Pro-Display-Regular.otf") format("woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'SF Pro Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local("SF Pro Display Bold"), url("fonts/sf-pro/SF-Pro-Display-Bold.otf") format("woff");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: normal;
+  src: local("SF Mono"), url("fonts/sf-mono/SFMono-Regular.otf") format("woff");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+*:focus {
+  outline: 2px;
+  outline-style: dashed;
+  outline-color: #64ffda;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
 }
+
+main {
+  margin: 0;
+  padding: 0 25px;
+  font-family: 'SF Pro Regular';
+}
+
+.skip-to-content {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: -100%;
+  padding: 15px 20px;
+  background-color: #64ffda;
+  color: #0a192f;
+  font-size: .85em;
+  border-radius: 5px;
+  font-family: 'SF Mono';
+  min-height: 44px;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  z-index: 99;
+}
+
+.skip-to-content:focus {
+  left: 0;
+}
+
+.random {
+  height: 1600px;
+  width: 100%;
+  background-color: #0a192f;
+}
+
+.random:after {
+  content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for will uncover';
+  display: block;
+  color: #64ffda;
+}
+/*# sourceMappingURL=App.css.map */

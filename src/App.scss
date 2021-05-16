@@ -1,0 +1,59 @@
+@import './styles/color';
+@import './styles/fonts';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: 2px;
+        outline-style: dashed;
+        outline-color: $cyan;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin: 0;
+    padding: 0 25px;
+    font-family: 'SF Pro Regular';
+}
+
+.skip-to-content {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: -100%;
+    padding: 15px 20px;
+    background-color: $cyan;
+    color: $navy;
+    font-size: .85em;
+    border-radius: 5px;
+    font-family: 'SF Mono';
+    min-height: 44px;
+    transition: .4s ease;
+    z-index: 99;
+
+    &:focus {
+        left: 0;
+    }
+}
+
+
+.random {
+    height: 1600px;
+    width: 100%;
+    background-color: $navy;
+
+    &:after {
+        content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for will uncover';
+        display: block;
+        color: $cyan;
+
+    }
+}
