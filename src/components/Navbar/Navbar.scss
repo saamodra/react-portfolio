@@ -1,4 +1,4 @@
-@import './../../styles/color';
+@import './../../styles/variables';
 
 @mixin nav-hover-animation($width) {
     &::after {
@@ -62,7 +62,7 @@
                 height: 100%;
                 display: flex;
                 align-items: center;
-                color: #e6f1ff;
+                color: $white;
                 position: relative;
                 transition: .3s ease;
                 font-family: 'SF Mono';

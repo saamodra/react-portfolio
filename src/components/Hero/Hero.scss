@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+@mixin hero-title($color) {
+    color: $color;
+    font-family: $sf-pro-bold;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    width: 90%;
+
+    .hero-greeting {
+        color: $cyan;
+        font-family: $sf-mono;
+    }
+
+    .hero-name {
+        @include hero-title($white);
+        margin-top: 20px;
+        font-size: 2.2em;
+    }
+
+    .hero-subname {
+        @include hero-title($slate);
+        margin-top: 5px;
+    }
+
+    .hero-summary {
+        color: $slate;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        letter-spacing: .5px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}

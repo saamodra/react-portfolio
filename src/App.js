@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Hero from './components/Hero/Hero';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Navbar />
         </header>
         <main>
+          <Hero />
           <div className="random"></div>
           <Switch>
             <Route path='/' exact />
