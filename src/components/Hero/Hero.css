@@ -48,8 +48,12 @@
   margin-top: 20px;
 }
 
+.hero-left, .hero-right {
+  display: none;
+}
+
 .hero-left {
-  position: absolute;
+  position: fixed;
   left: 20px;
   bottom: 0;
 }
@@ -84,7 +88,7 @@
 }
 
 .hero-right {
-  position: absolute;
+  position: fixed;
   right: 20px;
   bottom: 0;
 }
@@ -114,8 +118,14 @@
   .hero-container {
     width: 85%;
   }
+  .hero-container .hero-name {
+    font-size: 3em;
+  }
   .hero-container .hero-subname {
-    font-size: 1.6em;
+    font-size: 1.9em;
+  }
+  .hero-container .hero-greeting {
+    font-size: 1.2em;
   }
 }
 
@@ -126,6 +136,9 @@
   .hero-container .hero-summary {
     font-size: 1.2em;
     max-width: 600px;
+  }
+  .hero-left, .hero-right {
+    display: block;
   }
 }
 
@@ -140,7 +153,7 @@
     font-size: 3.5em;
   }
   .hero-container .hero-subname {
-    font-size: 2.7em;
+    font-size: 2.4em;
   }
   .hero-container .hero-summary {
     font-size: 1.2em;
@@ -149,6 +162,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  html {
+    font-size: 17px;
+  }
   .hero-container {
     width: 50%;
   }

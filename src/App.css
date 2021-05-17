@@ -64,7 +64,7 @@ main {
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 5px;
   -webkit-transition: .3s ease;
   transition: .3s ease;
@@ -74,7 +74,7 @@ main {
 .btn.btn-primary {
   background-color: var(--primary-2);
   color: var(--bg-primary-1);
-  border: 2px solid var(--primary-2);
+  border: 1px solid var(--primary-2);
 }
 
 .btn.btn-primary:hover {
@@ -90,15 +90,53 @@ main {
   background-color: var(--bg-secondary-1);
 }
 
-.random {
-  height: 1600px;
-  width: 100%;
-  background-color: var(--bg-primary-1);
+section {
+  display: inline-block;
+  margin: 75px 20px;
+  max-width: 900px;
 }
 
-.random:after {
-  content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for will uncover';
+section .section-title {
+  color: var(--f-primary-1);
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+section .section-title h2 {
+  display: inline-block;
+}
+
+section .section-title::after {
+  margin-left: 20px;
+  width: 100%;
+  content: '';
   display: block;
+  height: 1px;
+  background-color: var(--f-primary-2);
+}
+
+.text-primary {
   color: var(--primary-2);
+}
+
+.text-white {
+  color: var(--f-primary-1);
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    display: block;
+    margin: 75px auto;
+    width: 80%;
+  }
+  section .section-title {
+    font-size: 1.4em;
+  }
 }
 /*# sourceMappingURL=App.css.map */

@@ -56,8 +56,12 @@
     }
 }
 
+.hero-left, .hero-right {
+    display: none;
+}
+
 .hero-left {
-    position: absolute;
+    position: fixed;
     left: 20px;
     bottom: 0;
 
@@ -84,7 +88,7 @@
 }
 
 .hero-right {
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 0;
 
@@ -105,8 +109,16 @@
     .hero-container {
         width: 85%;
 
+        .hero-name {
+            font-size: 3em;
+        }
+
         .hero-subname {
-            font-size: 1.6em;
+            font-size: 1.9em;
+        }
+
+        .hero-greeting {
+            font-size: 1.2em;
         }
     }
 }
@@ -119,6 +131,10 @@
             font-size: 1.2em;
             max-width: 600px;
         }
+    }
+
+    .hero-left, .hero-right {
+        display: block;
     }
 }
 
@@ -135,7 +151,7 @@
         }
 
         .hero-subname {
-            font-size: 2.7em;
+            font-size: 2.4em;
         }
 
         .hero-summary {
@@ -146,6 +162,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    html {
+        font-size: 17px;
+    }
+
     .hero-container {
         width: 50%;
 

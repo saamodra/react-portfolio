@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Hero from './components/Hero/Hero';;
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Education from './components/Education/Education';
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         </header>
         <main>
           <Hero />
+          <About />
+          <Education />
           <div className="random"></div>
           <Switch>
             <Route path='/' exact />

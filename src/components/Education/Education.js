@@ -1,17 +1,16 @@
 import React from 'react';
-import './About.css';
+import './Education.css';
 
-function About() {
+function Education() {
     return (
-        <section className="section-about">
+        <section className="section-education">
             <div className="section-title">
-                <h2><span className="text-primary">02. </span>About</h2>
+                <h2><span className="text-primary">03. </span>Education</h2>
             </div>
 
-
-            <div className="section-about-content">
+            <div className="section-content-education">
                 <div className="section-image">
-                    <img src="images/profile.jpg" alt="Profile" />
+                    <img src="images/profile.jpg" alt="Profile" height="30" width="30" />
                 </div>
                 <div className="section-description">
                     <p>
@@ -26,4 +25,4 @@ function About() {
     );
 }
 
-export default About;
+export default Education;
