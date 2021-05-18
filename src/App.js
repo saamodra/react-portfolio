@@ -1,11 +1,11 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Education from './components/Education/Education';
-
 
 function App() {
   return (
@@ -19,9 +19,8 @@ function App() {
           <Hero />
           <About />
           <Education />
-          <div className="random"></div>
           <Switch>
-            <Route path='/' exact />
+            <Route path="/" exact />
           </Switch>
         </main>
       </Router>
