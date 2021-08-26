@@ -1,1 +1,160 @@
-/* No CSS *//*# sourceMappingURL=Education.css.map */
+.section-content-education {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+.section-image h3 {
+  letter-spacing: 1px;
+  margin-top: 20px;
+  color: var(--primary-2);
+}
+
+.section-image p {
+  margin-top: 10px;
+  color: var(--f-primary-3);
+}
+
+.section-description {
+  color: var(--f-primary-2);
+  font-family: var(--sf-pro-regular);
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.section-description-list {
+  list-style-type: none;
+}
+
+.section-description-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-description-list li i {
+  margin-right: 10px;
+  color: var(--primary-2);
+}
+
+.education-content {
+  display: none;
+}
+
+.education-content.active {
+  display: block;
+}
+
+.education-navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.education-navigator .education-tab {
+  cursor: pointer;
+  border: none;
+  font-family: var(--sf-mono);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+  background-color: transparent;
+  color: var(--f-primary-3);
+  position: relative;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
+
+.education-navigator .education-tab:hover {
+  background-color: #31272a;
+  color: var(--primary-3);
+}
+
+.education-navigator .education-tab:hover::after {
+  background-color: var(--primary-3);
+}
+
+.education-navigator .education-tab::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  display: block;
+  content: '';
+  height: 2px;
+  background-color: var(--f-primary-3);
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
+
+.education-navigator .education-tab.active {
+  background-color: #31272a;
+  color: var(--primary-3);
+}
+
+.education-navigator .education-tab.active::after {
+  background-color: var(--primary-3);
+}
+
+@media screen and (min-width: 768px) {
+  .section-content-education {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .education-content {
+    width: 100%;
+  }
+  .education-navigator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 150px;
+    -ms-flex-flow: column;
+        flex-flow: column;
+  }
+  .education-navigator .education-tab {
+    margin-top: 2px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .education-navigator .education-tab::after {
+    top: 0;
+    left: -2px;
+    height: 100%;
+    width: 2px;
+  }
+}
+/*# sourceMappingURL=Education.css.map */

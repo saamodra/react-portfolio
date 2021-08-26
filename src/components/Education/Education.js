@@ -1,7 +1,16 @@
-import React from 'react';
+/* eslint-disable no-console */
+import React, { useState } from 'react';
 import './Education.css';
 
 function Education() {
+  const [tab, setTab] = useState('diploma');
+
+  function tabChange(e) {
+    const { tab: buttonTab } = e.target.dataset;
+
+    setTab(buttonTab);
+  }
+
   return (
     <section className="section-education">
       <div className="section-title">
@@ -12,30 +21,52 @@ function Education() {
       </div>
 
       <div className="section-content-education">
-        <aside className="education-navigator" />
+        <aside className="education-navigator">
+          <button type="button" className={`education-tab ${tab === 'diploma' ? 'active' : ''}`} data-tab="diploma" onClick={tabChange}>Diploma</button>
+          <button type="button" className={`education-tab ${tab === 'high-school' ? 'active' : ''}`} data-tab="high-school" onClick={tabChange}>High School</button>
+        </aside>
 
-        <div className="education-content">
+        <div className={`education-content ${tab === 'diploma' ? 'active' : ''}`} id="diploma">
           <div className="section-image">
-            <img src="stmj.png" alt="Profile" height="100" width="100" />
             <img src="polman.png" alt="Profile" height="100" width="100" />
+            <h3>Politeknik Astra</h3>
+            <p>2019 - 2022</p>
           </div>
           <div className="section-description">
-            <p>
-              Hello! My name is
-              {' '}
-              <span className="text-name">Samodra</span>
-              . I enjoy learning new things about programming and web technology. I love problem solving and Happy to help people to solve their problems. Now, I am interested in front end development, especially
-              {' '}
-              <a href="https://reactjs.org/">React.js</a>
-              ,
-              {' '}
-              <a href="https://web.dev/progressive-web-apps/">PWA</a>
-              {' '}
-              and Mobile First Approach.
-            </p>
-            <p>
-              My main focus these days is to finish the rest of my college and building a good personal portfolio. I am also active in the Indonesian programming community to continue to learn a new things and develop my communication skill with other programmers.
-            </p>
+            <ul className="section-description-list">
+              <li>
+                <i className="fas fa-caret-square-right" />
+                <p>1st Winner HIMFEST 2021 Binus University Malang</p>
+              </li>
+              <li>
+                <i className="fas fa-caret-square-right" />
+                <p>Robotic Polman Astra (Secretary)</p>
+              </li>
+              <li>
+                <i className="fas fa-caret-square-right" />
+                <p>Himma Manajemen Informatika (Education Department)</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={`education-content ${tab === 'high-school' ? 'active' : ''}`} id="high-school">
+          <div className="section-image">
+            <img src="stmj.png" alt="Profile" height="100" width="100" />
+            <h3>SMKN 1 Jenangan</h3>
+            <p>2016 - 2019</p>
+          </div>
+          <div className="section-description">
+            <ul className="section-description-list">
+              <li>
+                <i className="fas fa-caret-square-right" />
+                <p>6th Place LKS Web Design Jatim</p>
+              </li>
+              <li>
+                <i className="fas fa-caret-square-right" />
+                <p>1st Winner LKS Web Design Wilker IV Jatim</p>
+              </li>
+            </ul>
           </div>
         </div>
 
