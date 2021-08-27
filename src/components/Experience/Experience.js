@@ -6,7 +6,6 @@ function Education() {
   const [tab, setTab] = useState(0);
 
   function tabChange(tabParam) {
-    // console.log('tab change');
     setTab(tabParam);
   }
 
@@ -21,55 +20,127 @@ function Education() {
 
       <div className="section-content-experience">
         <aside className="experience-navigator">
-          <button type="button" className={`experience-tab ${tab === 0 ? 'active' : ''}`} data-tab="student-mentor" onClick={() => tabChange(0)}>Student Mentor</button>
-          <button type="button" className={`experience-tab ${tab === 1 ? 'active' : ''}`} data-tab="external-code-reviewer" onClick={() => tabChange(1)}>External Code Reviewer</button>
-          <button type="button" className={`experience-tab ${tab === 2 ? 'active' : ''}`} data-tab="internship" onClick={() => tabChange(2)}>Intern</button>
+          <button type="button" className={`experience-tab ${tab === 0 ? 'active' : ''}`} data-tab="student-mentor" onClick={() => tabChange(0)}>Kotakode</button>
+          <button type="button" className={`experience-tab ${tab === 1 ? 'active' : ''}`} data-tab="external-code-reviewer" onClick={() => tabChange(1)}>Dicoding Indonesia</button>
+          <button type="button" className={`experience-tab ${tab === 2 ? 'active' : ''}`} data-tab="external-code-reviewer" onClick={() => tabChange(2)}>Universitas Surakarta</button>
         </aside>
 
-        <div className="experience-content" id="student-mentor" style={{ transform: `translateX(${tab * 100}%)` }}>
-          <div className="section-image">
-            <img src="polman.png" alt="Profile" height="100" width="100" />
-            <h3>Politeknik Astra</h3>
-            <p>2019 - 2022</p>
-          </div>
-          <div className="section-description">
-            <ul className="section-description-list">
-              <li>
-                <i className="fas fa-caret-square-right" />
-                <p>1st Winner HIMFEST 2021 Binus University Malang</p>
-              </li>
-              <li>
-                <i className="fas fa-caret-square-right" />
-                <p>Robotic Polman Astra (Secretary)</p>
-              </li>
-              <li>
-                <i className="fas fa-caret-square-right" />
-                <p>Himma Manajemen Informatika (Education Department)</p>
-              </li>
-            </ul>
+        <div className="overflow-hidden">
+          <div className="experience-content-container" style={{ transform: `translateX(-${tab * 100}%)` }}>
+            <div className="experience-content">
+              <div className="experience-title">
+                <h3>
+                  Student Mentor
+                  {' '}
+                  <span>@ Kotakode</span>
+                </h3>
+                <p>July 2021 - September 2021</p>
+              </div>
+              <div className="section-description">
+                <ul className="section-description-list">
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>
+                      Help answer questions from
+                      <a href="https://www.kotakode.com/pertanyaan" className="text-primary"> kotakode.com</a>
+                      {' '}
+                      users
+                    </p>
+                  </li>
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>Share knowledge by posting programming questions and answers</p>
+                  </li>
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>Sharing knowledge through microblogging</p>
+                  </li>
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>Interact and provide assistance for kotakode users</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="experience-content">
+              <div className="experience-title">
+                <h3>
+                  External Code Reviewer
+                  {' '}
+                  <span>@ Dicoding Indonesia</span>
+                </h3>
+                <p>July 2021 - Present</p>
+              </div>
+              <div className="section-description">
+                <ul className="section-description-list">
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>
+                      Review student submission codes on the learning path
+                      <a href="https://www.dicoding.com/learningpaths/22" className="text-primary"> Front-End Web</a>
+                    </p>
+                  </li>
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>
+                      Provide suggestions that students need on the learning path
+                      <a href="https://www.dicoding.com/learningpaths/22" className="text-primary"> Front-End Web</a>
+                    </p>
+                  </li>
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>
+                      Answer questions on the
+                      <a href="https://www.dicoding.com" className="text-primary"> Dicoding</a>
+                      {' '}
+                      discussion forum
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="experience-content">
+              <div className="experience-title">
+                <h3>
+                  Intern
+                  {' '}
+                  <span>@ Universitas Surakarta</span>
+                </h3>
+                <p>February 2018 - May 2018</p>
+              </div>
+              <div className="section-description">
+                <ul className="section-description-list">
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>
+                      Review student submission codes on the learning path
+                      <a href="https://www.dicoding.com/learningpaths/22" className="text-primary"> Front-End Web</a>
+                    </p>
+                  </li>
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>
+                      Provide suggestions that students need on the learning path
+                      <a href="https://www.dicoding.com/learningpaths/22" className="text-primary"> Front-End Web</a>
+                    </p>
+                  </li>
+                  <li>
+                    <i className="fas fa-caret-square-right" />
+                    <p>
+                      Answer questions on the
+                      <a href="https://www.dicoding.com" className="text-primary"> Dicoding</a>
+                      {' '}
+                      discussion forum
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
-
-        <div className={`experience-content ${tab === 'external-code-reviewer' ? 'active' : ''}`} id="external-code-reviewer">
-          <div className="section-image">
-            <img src="stmj.png" alt="Profile" height="100" width="100" />
-            <h3>SMKN 1 Jenangan</h3>
-            <p>2016 - 2019</p>
-          </div>
-          <div className="section-description">
-            <ul className="section-description-list">
-              <li>
-                <i className="fas fa-caret-square-right" />
-                <p>6th Place LKS Web Design Jatim</p>
-              </li>
-              <li>
-                <i className="fas fa-caret-square-right" />
-                <p>1st Winner LKS Web Design Wilker IV Jatim</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </section>
   );

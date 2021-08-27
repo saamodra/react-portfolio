@@ -105,6 +105,10 @@ section {
     color: var(--f-primary-1);
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 @media screen and (min-width: 480px) {
     section {
         padding: 75px 20px;

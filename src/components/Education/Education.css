@@ -6,7 +6,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-x: hidden;
 }
 
 .section-image {
@@ -104,6 +103,7 @@
   outline: none;
   -webkit-transition: .15s ease-in-out;
   transition: .15s ease-in-out;
+  white-space: nowrap;
 }
 
 .education-navigator .education-tab:hover {
