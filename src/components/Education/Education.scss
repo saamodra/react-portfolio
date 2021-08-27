@@ -1,6 +1,7 @@
 .section-content-education {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .section-image {
@@ -43,11 +44,17 @@
     }
 }
 
-.education-content {
-    display: none;
+.education-content-container {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    transition: .5s ease-in-out;
 
-    &.active {
-        display: block;
+    .education-content {
+        width: 100%;
+        flex: 0 0 100%;
+        position: relative;
+        transition: .5s ease-in-out;
     }
 }
 
@@ -64,6 +71,7 @@
         background-color: transparent;
         color: var(--f-primary-3);
         position: relative;
+        outline: none;
         transition: .15s ease-in-out;
 
         &:hover {

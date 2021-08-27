@@ -71,7 +71,7 @@ main {
 
 section {
     display: inline-block;
-    margin: 75px 0;
+    padding: 75px 0;
     max-width: 900px;
     width: 100%;
 
@@ -107,14 +107,15 @@ section {
 
 @media screen and (min-width: 480px) {
     section {
-        margin: 75px 20px;
+        padding: 75px 20px;
     }
 }
 
 @media screen and (min-width: 768px) {
     section {
         display: block;
-        margin: 75px auto;
+        padding: 75px auto;
+        margin: 0 auto;
         width: 80%;
 
         .section-title {
