@@ -30,6 +30,7 @@ function Education() {
               <div className="section-image">
                 <img src="polman.png" alt="Profile" height="100" width="100" />
                 <h3>Politeknik Astra</h3>
+                <p>Informatics Management</p>
                 <p>2019 - 2022</p>
               </div>
               <div className="section-description">
@@ -54,6 +55,7 @@ function Education() {
               <div className="section-image">
                 <img src="stmj.png" alt="Profile" height="100" width="100" />
                 <h3>SMKN 1 Jenangan</h3>
+                <p>Software Engineering</p>
                 <p>2016 - 2019</p>
               </div>
               <div className="section-description">
