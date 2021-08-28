@@ -99,11 +99,9 @@ function Education() {
                         <p>{parse(desc)}</p>
                       </li>
                     ))}
-
                   </ul>
                 </div>
               </div>
-
             ))}
 
           </div>
