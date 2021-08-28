@@ -1,35 +1,13 @@
+/* eslint-disable import/named */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
+import initialData from '../../data/educations';
 import './Education.css';
 
 function Education() {
   const [tab, setTab] = useState(0);
-  const [educationData, setEducationData] = useState([
-    {
-      level: 'Diploma',
-      school: 'Politeknik Astra',
-      image: 'polman.png',
-      major: 'Informatics Management',
-      duration: '2019 - 2021',
-      description: [
-        '1st Winner HIMFEST 2021 Binus University Malang',
-        'Robotic Polman Astra (Secretary)',
-        'Himma Manajemen Informatika (Education Department)',
-      ],
-    },
-    {
-      level: 'High School',
-      school: 'SMKN 1 Jenangan',
-      image: 'stmj.png',
-      major: 'Software Engineering',
-      duration: '2016 - 2019',
-      description: [
-        '6th Place LKS Web Design Jatim 2019',
-        '1st Winner LKS Web Design Wilker IV Jatim 2019',
-      ],
-    },
-  ]);
+  const [educationData, setEducationData] = useState(initialData);
 
   function tabChange(tabParam) {
     setTab(tabParam);
