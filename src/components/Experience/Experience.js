@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
@@ -5,7 +6,7 @@ import parse from 'html-react-parser';
 import initialData from '../../data/experiences';
 import './Experience.css';
 
-function Experience() {
+function Experience({ componentRef }) {
   const [tab, setTab] = useState(0);
   const [experienceData, setExperienceData] = useState(initialData);
 
@@ -14,7 +15,7 @@ function Experience() {
   }
 
   return (
-    <section className="section-experience">
+    <section className="section-experience" ref={componentRef}>
       <div className="section-title">
         <h2>
           <span className="text-primary">04. </span>

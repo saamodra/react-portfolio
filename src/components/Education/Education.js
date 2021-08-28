@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable import/named */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
@@ -5,7 +6,7 @@ import React, { useState } from 'react';
 import initialData from '../../data/educations';
 import './Education.css';
 
-function Education() {
+function Education({ componentRef }) {
   const [tab, setTab] = useState(0);
   const [educationData, setEducationData] = useState(initialData);
 
@@ -14,7 +15,7 @@ function Education() {
   }
 
   return (
-    <section className="section-education">
+    <section className="section-education" ref={componentRef}>
       <div className="section-title">
         <h2>
           <span className="text-primary">03. </span>

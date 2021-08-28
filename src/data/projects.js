@@ -57,6 +57,6 @@ export default [
       github: 'https://github.com/saamodra/Doize',
     },
     tech: ['Java', 'Android', 'PHP', 'Lumen'],
-    description: 'Doize App is an Android-based application that is used to make it easier for someone to manage time and work that needs to be completed. This application can help users to plan the day and organize their personal activities so that they can increase productivity, reduce stress, and also manage tasks well.',
+    description: 'Doize is an Android-based application that is used to make it easier for someone to manage time and work that needs to be completed. This application can help users to plan the day and organize their personal activities so that they can increase productivity, reduce stress, and also manage tasks well.',
   },
 ];

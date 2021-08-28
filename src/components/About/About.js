@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable max-len */
 import React from 'react';
 import './About.css';
 
-function About() {
+function About({ componentRef }) {
   return (
-    <section className="section-about">
+    <section className="section-about" id="about" ref={componentRef}>
       <div className="section-title">
         <h2>
           <span className="text-primary">02. </span>
@@ -14,7 +15,7 @@ function About() {
 
       <div className="section-about-content">
         <div className="section-image">
-          {/* <img src="images/profile.jpg" alt="Profile" /> */}
+          <img src="images/profile.jpg" alt="Profile" />
         </div>
         <div className="section-description">
           <p>

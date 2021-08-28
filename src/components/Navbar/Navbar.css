@@ -23,6 +23,9 @@
 
 .navbar .nav-link {
   display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .navbar .nav-logo {
@@ -49,7 +52,10 @@
   margin-right: 30px;
 }
 
-.navbar .nav-items li a {
+.navbar .nav-items li button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
   padding: 20px;
   height: 100%;
   display: -webkit-box;
@@ -66,7 +72,7 @@
   font-size: .9em;
 }
 
-.navbar .nav-items li a::after {
+.navbar .nav-items li button::after {
   content: '';
   position: absolute;
   width: 0;
@@ -80,11 +86,11 @@
   transition: .3s ease;
 }
 
-.navbar .nav-items li a:hover::after {
+.navbar .nav-items li button:hover::after {
   width: 100%;
 }
 
-.navbar .nav-items li a:hover {
+.navbar .nav-items li button:hover {
   color: var(--primary-2);
 }
 
@@ -121,7 +127,8 @@
   width: 100%;
 }
 
-.navbar .aside-nav ul li a {
+.navbar .aside-nav ul li button {
+  width: 100%;
   font-family: var(--sf-mono);
   color: var(--primary-2);
   display: block;
@@ -130,9 +137,12 @@
   position: relative;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.navbar .aside-nav ul li a::after {
+.navbar .aside-nav ul li button::after {
   content: '';
   position: absolute;
   width: 0;
@@ -146,7 +156,7 @@
   transition: .3s ease;
 }
 
-.navbar .aside-nav ul li a:hover::after {
+.navbar .aside-nav ul li button:hover::after {
   width: 50%;
 }
 

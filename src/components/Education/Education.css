@@ -8,7 +8,7 @@
           flex-direction: column;
 }
 
-.section-image {
+.section-content-education .section-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,13 +25,13 @@
   padding: 30px 0;
 }
 
-.section-image h3 {
+.section-content-education .section-image h3 {
   letter-spacing: 1px;
   margin-top: 20px;
   color: var(--primary-2);
 }
 
-.section-image p {
+.section-content-education .section-image p {
   margin-top: 10px;
   color: var(--f-primary-3);
   font-family: var(--sf-mono);

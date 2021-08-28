@@ -1,13 +1,23 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({ refs, aboutRef }) {
   const [showNav, setShowNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  // const menuRef = useRef(myRef);
 
   const handleNavClick = () => setShowNav(!showNav);
-  const closeNav = () => setShowNav(false);
+  const closeNav = (ref) => {
+    ref.scrollIntoView({ behavior: 'smooth' });
+    setShowNav(false);
+  };
+
+  const scrollToRef = (ref) => {
+    ref.scrollIntoView({ behavior: 'smooth' });
+  };
 
   window.addEventListener('scroll', () => {
     const windowPosition = window.scrollY;
@@ -19,16 +29,16 @@ function Navbar() {
   return (
     <>
       <nav className={`navbar ${scrolled ? 'box-shadow' : ''}`}>
-        <Link to="/" className="nav-link">
+        <button type="button" onClick={() => scrollToRef(refs.current[0])} className="nav-link">
           <img src="/wm-red-2.png" alt="" className="nav-logo" />
-        </Link>
+        </button>
 
         <ul className="nav-items">
-          <li><Link to="#about">About</Link></li>
-          <li><Link to="#education">Education</Link></li>
-          <li><Link to="#certification">Certification</Link></li>
-          <li><Link to="#projects">Projects</Link></li>
-          <li><Link to="#contact">Contact Me</Link></li>
+          <li><button type="button" onClick={() => scrollToRef(refs.current[1])}>About</button></li>
+          <li><button type="button" onClick={() => scrollToRef(refs.current[2])}>Education</button></li>
+          <li><button type="button" onClick={() => scrollToRef(refs.current[3])}>Experience</button></li>
+          <li><button type="button" onClick={() => scrollToRef(refs.current[4])}>Projects</button></li>
+          <li><button type="button" onClick={() => scrollToRef(refs.current[5])}>Contact Me</button></li>
         </ul>
 
         <div className="menu-icon">
@@ -39,11 +49,12 @@ function Navbar() {
 
         <aside aria-hidden={!showNav} tabIndex="-1" className={`aside-nav ${showNav ? 'active' : ''}`}>
           <ul>
-            <li><Link to="#about" onClick={closeNav}>About</Link></li>
-            <li><Link to="#education" onClick={closeNav}>Education</Link></li>
-            <li><Link to="#certification" onClick={closeNav}>Certification</Link></li>
-            <li><Link to="#projects" onClick={closeNav}>Projects</Link></li>
-            <li><Link to="#contact" onClick={closeNav}>Contact Me</Link></li>
+            <li><button type="button" onClick={() => closeNav(refs.current[0])}>Home</button></li>
+            <li><button type="button" onClick={() => closeNav(refs.current[1])}>About</button></li>
+            <li><button type="button" onClick={() => closeNav(refs.current[2])}>Education</button></li>
+            <li><button type="button" onClick={() => closeNav(refs.current[3])}>Experience</button></li>
+            <li><button type="button" onClick={() => closeNav(refs.current[4])}>Projects</button></li>
+            <li><button type="button" onClick={() => closeNav(refs.current[5])}>Contact Me</button></li>
           </ul>
         </aside>
       </nav>

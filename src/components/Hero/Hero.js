@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 
-function Hero() {
+function Hero({ componentRef }) {
   return (
-    <div className="hero">
+    <div className="hero" ref={componentRef}>
       <div className="hero-container">
         <p className="hero-greeting">Hi, my name is</p>
         <h1 className="hero-name">Samodra</h1>
@@ -39,7 +40,7 @@ function Hero() {
       </aside>
 
       <aside className="hero-right">
-        <a href="mailto:szsamodra@gmail.com">szsamodra@gmail.com</a>
+        <a href="mailto:samodra.me@gmail.com">samodra.me@gmail.com</a>
       </aside>
     </div>
   );

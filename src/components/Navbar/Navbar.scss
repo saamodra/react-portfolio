@@ -33,7 +33,11 @@
 
     .nav-link {
         display: inline-block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
+
     .nav-logo {
         max-height: 60px;
         padding: 10px 25px;
@@ -58,7 +62,10 @@
         margin-right: 30px;
 
         li {
-            a {
+            button {
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
                 padding: 20px;
                 height: 100%;
                 display: flex;
@@ -101,7 +108,8 @@
             list-style-type: none;
             width: 100%;
 
-            li a {
+            li button {
+                width: 100%;
                 font-family: var(--sf-mono);
                 color: var(--primary-2);
                 display: block;
@@ -109,6 +117,9 @@
                 padding: 25px 0;
                 position: relative;
                 transition: .3s ease;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
 
                 @include nav-hover-animation(50%);
             }

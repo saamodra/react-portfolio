@@ -1,14 +1,15 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import initialData from '../../data/projects';
 import './Project.css';
 
-function Project() {
+function Project({ componentRef }) {
   const [projects, setProjects] = useState(initialData);
 
   return (
-    <section className="section-project">
+    <section className="section-project" ref={componentRef}>
       <div className="section-title">
         <h2>
           <span className="text-primary">05. </span>
