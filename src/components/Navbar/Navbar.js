@@ -43,7 +43,7 @@ function Navbar({ refs }) {
     <>
       <nav className={`navbar ${scrolled ? 'box-shadow' : ''}`}>
         <button type="button" onClick={() => scrollToRef(refs.current[0])} className="nav-link" aria-label="Navbar Logo">
-          <img src="/wm-red-2-min.png" alt="Navbar Logo" height="40" width="40" className="nav-logo" loading="lazy" />
+          <img src="./wm-red-2-min.png" alt="Navbar Logo" height="40" width="40" className="nav-logo" loading="lazy" />
         </button>
 
         <ul className="nav-items">
@@ -53,7 +53,7 @@ function Navbar({ refs }) {
           <li><button type="button" onClick={() => scrollToRef(refs.current[4])}>Projects</button></li>
           <li><button type="button" onClick={() => scrollToRef(refs.current[5])}>Contact Me</button></li>
           <li>
-            <label className="switch" htmlFor="switch" aria-labelledby="Toggle Mode">
+            <label className="switch" htmlFor="switch" aria-label="Toggle Mode">
               <input type="checkbox" id="switch" onChange={changeMode} checked={!darkMode} />
               <span className="slider round" />
             </label>
@@ -75,7 +75,7 @@ function Navbar({ refs }) {
             <li><button type="button" onClick={() => closeNav(refs.current[4])}>Projects</button></li>
             <li><button type="button" onClick={() => closeNav(refs.current[5])}>Contact Me</button></li>
             <li>
-              <label className="switch" htmlFor="switchAside" aria-labelledby="Toggle Mode">
+              <label className="switch" htmlFor="switchAside" aria-label="Toggle Mode">
                 <input type="checkbox" id="switchAside" onChange={changeMode} checked={!darkMode} />
                 <span className="slider round" />
               </label>

@@ -43,8 +43,8 @@ function Project({ componentRef }) {
             </div>
             <div className="project-image">
               <picture>
-                <source media="(min-width:1024px)" srcSet={`/projects/${data.image}-large.jpg`} />
-                <img src={`/projects/${data.image}-small.jpg`} alt={data.title} loading="lazy" />
+                <source media="(min-width:1024px)" srcSet={`./projects/${data.image}-large.jpg`} />
+                <img src={`./projects/${data.image}-small.jpg`} alt={data.title} loading="lazy" />
               </picture>
             </div>
           </div>
