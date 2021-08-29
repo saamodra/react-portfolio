@@ -43,7 +43,9 @@ function Project({ componentRef }) {
             </div>
             <div className="project-image">
               <picture>
-                <source media="(min-width:1024px)" srcSet={`./projects/${data.image}-large.jpg`} />
+                <source media="(min-width:1024px)" type="image/webp" srcSet={`./projects/${data.image}-large.webp`} />
+                <source media="(min-width:1024px)" type="image/jpeg" srcSet={`./projects/${data.image}-large.jpg`} />
+                <source type="image/webp" srcSet={`./projects/${data.image}-small.webp`} />
                 <img src={`./projects/${data.image}-small.jpg`} alt={data.title} loading="lazy" />
               </picture>
             </div>

@@ -53,6 +53,18 @@
   margin-right: 30px;
 }
 
+.navbar .nav-items li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .navbar .nav-items li button {
   border: none;
   cursor: pointer;
@@ -200,7 +212,7 @@
   content: "";
   height: 34px;
   width: 34px;
-  left: 4px;
+  left: 5px;
   bottom: 5px;
   background-color: white;
   -webkit-transition: 0.4s;
@@ -217,8 +229,8 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(28px);
-  transform: translateX(28px);
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
 }
 
 /* Rounded sliders */
@@ -228,6 +240,18 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.switch.desktop {
+  width: 60px;
+  height: 36px;
+  padding: 22px;
+  margin: 0;
+}
+
+.switch.desktop input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+          transform: translateX(17px);
 }
 
 @media screen and (min-width: 768px) {
@@ -264,6 +288,14 @@ input:checked + .slider:before {
   }
   .navbar .nav-items li a {
     font-size: 0.95em;
+  }
+  .switch.desktop {
+    width: 68px;
+    margin: 0 20px;
+  }
+  .switch.desktop input:checked + .slider:before {
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
   }
 }
 

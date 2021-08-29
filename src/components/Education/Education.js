@@ -45,7 +45,17 @@ function Education({ componentRef }) {
             {educationData.map((data) => (
               <div className="education-content" key={`Education-${data.level}`}>
                 <div className="section-image">
-                  <img src={data.image} alt={data.school} height="100" width="100" loading="lazy" />
+                  <picture>
+                    <source media="(min-width:1200px)" type="image/png" srcSet={`${data.image}/${data.image}-large.png`} />
+                    <source media="(min-width:768px)" type="image/png" srcSet={`${data.image}/${data.image}-medium.png`} />
+                    <img
+                      src={`${data.image}/${data.image}-small.png`}
+                      alt={data.school}
+                      height="100"
+                      width="100"
+                      loading="lazy"
+                    />
+                  </picture>
                   <h3>{data.school}</h3>
                   <p>{data.major}</p>
                   <p>{data.duration}</p>

@@ -3,7 +3,7 @@ export default [
     id: '1',
     level: 'Diploma',
     school: 'Politeknik Astra',
-    image: 'polman-min.png',
+    image: 'polman',
     major: 'Informatics Management',
     duration: '2019 - 2021',
     description: [
@@ -16,7 +16,7 @@ export default [
     id: '2',
     level: 'High School',
     school: 'SMKN 1 Jenangan',
-    image: 'stmj-min.png',
+    image: 'stmj',
     major: 'Software Engineering',
     duration: '2016 - 2019',
     description: [

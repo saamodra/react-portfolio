@@ -16,8 +16,10 @@ function About({ componentRef }) {
       <div className="section-about-content">
         <div className="section-image">
           <picture>
-            <source media="(min-width:1024px)" srcSet="images/profile-large.jpg" />
-            <img src="images/profile-small.jpg" alt="Profile" />
+            <source media="(min-width:1024px)" type="image/webp" srcSet="images/profile-large.webp" />
+            <source media="(min-width:1024px)" type="image/jpeg" srcSet="images/profile-large.jpg" />
+            <source type="image/webp" srcSet="images/profile-small.webp" />
+            <img src="images/profile-small.jpg" alt="Profile" loading="lazy" />
           </picture>
         </div>
         <div className="section-description">
@@ -25,14 +27,15 @@ function About({ componentRef }) {
             Hello! My name is
             {' '}
             <span className="text-name">Samodra</span>
-            . I enjoy learning new things about programming and web technology. I love problem solving and Happy to help people to solve their problems. Now, I am interested in front end development, especially
+            . I enjoy learning new things about programming and web technology. Now, I am interested in front end development, especially
             {' '}
-            <a href="https://reactjs.org/">React.js</a>
+            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">React.js</a>
             ,
             {' '}
-            <a href="https://web.dev/progressive-web-apps/">PWA</a>
+            <a href="https://web.dev/progressive-web-apps/" target="_blank" rel="noreferrer">PWA</a>
+            ,
             {' '}
-            and Mobile First Approach.
+            and Web App Optimization.
           </p>
           <p>
             My main focus these days is to finish the rest of my college and building a good personal portfolio. I am also active in the Indonesian programming community to continue to learn a new things and develop my communication skill with other programmers.

@@ -43,7 +43,19 @@ function Navbar({ refs }) {
     <>
       <nav className={`navbar ${scrolled ? 'box-shadow' : ''}`}>
         <button type="button" onClick={() => scrollToRef(refs.current[0])} className="nav-link" aria-label="Navbar Logo">
-          <img src="./wm-red-2-min.png" alt="Navbar Logo" height="40" width="40" className="nav-logo" loading="lazy" />
+          <picture>
+            <source media="(min-width:1200px)" type="image/png" srcSet="wm-red-2/wm-large.png" />
+            <source media="(min-width:768px)" type="image/png" srcSet="wm-red-2/wm-medium.png" />
+            <img
+              src="wm-red-2/wm-small.png"
+              alt="Navbar Logo"
+              height="40"
+              width="40"
+              className="nav-logo"
+              loading="lazy"
+            />
+          </picture>
+          {/* <img src="./wm-red-2-min.png" alt="Navbar Logo" height="40" width="40" className="nav-logo" loading="lazy" /> */}
         </button>
 
         <ul className="nav-items">
@@ -51,9 +63,9 @@ function Navbar({ refs }) {
           <li><button type="button" onClick={() => scrollToRef(refs.current[2])}>Education</button></li>
           <li><button type="button" onClick={() => scrollToRef(refs.current[3])}>Experience</button></li>
           <li><button type="button" onClick={() => scrollToRef(refs.current[4])}>Projects</button></li>
-          <li><button type="button" onClick={() => scrollToRef(refs.current[5])}>Contact Me</button></li>
+          <li><button type="button" onClick={() => scrollToRef(refs.current[5])}>Contact</button></li>
           <li>
-            <label className="switch" htmlFor="switch" aria-label="Toggle Mode">
+            <label className="switch desktop" htmlFor="switch" aria-label="Toggle Mode">
               <input type="checkbox" id="switch" onChange={changeMode} checked={!darkMode} />
               <span className="slider round" />
             </label>

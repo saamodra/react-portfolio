@@ -1,8 +1,8 @@
 {
-  "name": "react-portfolio",
+  "name": "samodra-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://saamodra.me",
+  "homepage": "http://localhost:5500",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -36,6 +36,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build --stats",
+    "brunch-build": "brunch build -p",
     "test": "react-scripts test",
     "analyze": "webpack-bundle-analyzer build/bundle-stats.json",
     "eject": "react-scripts eject",
@@ -66,6 +67,7 @@
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "terser-brunch": "^4.1.0"
   }
 }
