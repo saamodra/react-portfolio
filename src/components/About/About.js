@@ -15,7 +15,10 @@ function About({ componentRef }) {
 
       <div className="section-about-content">
         <div className="section-image">
-          <img src="images/profile.jpg" alt="Profile" />
+          <picture>
+            <source media="(min-width:1024px)" srcSet="images/profile-large.jpg" />
+            <img src="images/profile-small.jpg" alt="Profile" />
+          </picture>
         </div>
         <div className="section-description">
           <p>

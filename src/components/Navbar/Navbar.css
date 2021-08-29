@@ -26,11 +26,12 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 10px 25px;
 }
 
 .navbar .nav-logo {
-  max-height: 60px;
-  padding: 10px 25px;
+  height: 30px;
+  width: 30px;
 }
 
 .navbar .menu-icon button {
@@ -233,9 +234,15 @@ input:checked + .slider:before {
     height: 70px;
   }
   .navbar .nav-logo {
-    max-height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
     width: auto;
-    padding: 15px 30px;
+    padding: 0 30px;
   }
   .navbar .nav-items {
     display: -webkit-box;
@@ -251,9 +258,6 @@ input:checked + .slider:before {
 }
 
 @media screen and (min-width: 900px) {
-  .navbar .nav-logo {
-    padding: 15px 40px;
-  }
   .navbar .nav-items {
     margin-right: 40px;
   }
@@ -263,9 +267,6 @@ input:checked + .slider:before {
 }
 
 @media screen and (min-width: 1200px) {
-  .navbar .nav-logo {
-    padding: 20px 50px;
-  }
   .navbar .nav-items {
     margin-right: 50px;
   }

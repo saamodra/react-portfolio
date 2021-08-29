@@ -13,6 +13,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^0.2.4",
+    "webpack-bundle-analyzer": "^4.4.2",
     "workbox-background-sync": "^5.1.3",
     "workbox-broadcast-update": "^5.1.3",
     "workbox-cacheable-response": "^5.1.3",
@@ -28,8 +29,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --stats",
     "test": "react-scripts test",
+    "analyze": "webpack-bundle-analyzer build/bundle-stats.json",
     "eject": "react-scripts eject",
     "lint": "eslint ./src"
   },

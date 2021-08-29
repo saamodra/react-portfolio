@@ -3,7 +3,7 @@ export default [
     id: '1',
     overline: 'Desktop',
     title: 'Kenko',
-    image: 'kenko.png',
+    image: 'kenko',
     links: {
       github: 'https://github.com/saamodra/KenkoApp',
     },
@@ -14,7 +14,7 @@ export default [
     id: '2',
     overline: 'Desktop',
     title: 'Overskill',
-    image: 'overskill.png',
+    image: 'overskill',
     links: {
       github: 'https://github.com/saamodra/Overskill',
     },
@@ -25,7 +25,7 @@ export default [
     id: '3',
     overline: 'Web',
     title: 'BUSS',
-    image: 'buss.png',
+    image: 'buss',
     links: {
       github: 'https://github.com/saamodra/BUSS',
     },
@@ -36,7 +36,7 @@ export default [
     id: '4',
     overline: 'Web',
     title: 'Sekolah Anak Bangsa',
-    image: 'sab.png',
+    image: 'sab',
     links: {
       github: 'https://github.com/alvinamartya/sekolahanakbangsa',
     },
@@ -47,7 +47,7 @@ export default [
     id: '5',
     overline: 'Web',
     title: 'Adagawe',
-    image: 'adagawe.png',
+    image: 'adagawe',
     links: {
       github: 'https://github.com/saamodra/adagawe',
     },
@@ -58,7 +58,7 @@ export default [
     id: '6',
     overline: 'Android',
     title: 'Doize',
-    image: 'doize.png',
+    image: 'doize',
     links: {
       github: 'https://github.com/saamodra/Doize',
     },

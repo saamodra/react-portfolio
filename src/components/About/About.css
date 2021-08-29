@@ -45,6 +45,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .section-about-content .section-image::after {

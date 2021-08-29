@@ -36,11 +36,12 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+        padding: 10px 25px;
     }
 
     .nav-logo {
-        max-height: 60px;
-        padding: 10px 25px;
+        height: 30px;
+        width: 30px;
     }
 
     .menu-icon button {
@@ -200,9 +201,11 @@ input:checked + .slider:before {
         height: 70px;
 
         .nav-logo {
-            max-height: 70px;
+            display: flex;
+            align-items: center;
+            height: 40px;
             width: auto;
-            padding: 15px 30px;
+            padding: 0 30px;
         }
 
         .nav-items {
@@ -221,9 +224,6 @@ input:checked + .slider:before {
 
 @media screen and (min-width: 900px) {
     .navbar {
-        .nav-logo {
-            padding: 15px 40px;
-        }
 
         .nav-items {
             margin-right: 40px;
@@ -237,9 +237,6 @@ input:checked + .slider:before {
 
 @media screen and (min-width: 1200px) {
     .navbar {
-        .nav-logo {
-            padding: 20px 50px;
-        }
 
         .nav-items {
             margin-right: 50px;

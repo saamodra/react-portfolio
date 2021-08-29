@@ -1,8 +1,8 @@
 :root {
-  --sf-pro-regular: 'SF Pro Regular';
-  --sf-pro-bold: 'SF Pro Bold';
-  --sf-mono: 'SF Mono';
-  --sf-mono-bold: 'SF Mono Bold';
+  --sf-pro-regular: 'SF Pro Regular', 'Arial', sans-serif;
+  --sf-pro-bold: 'SF Pro Bold', 'Arial', sans-serif;
+  --sf-mono: 'SF Mono', 'Arial', sans-serif;
+  --sf-mono-bold: 'SF Mono Bold', 'Arial', sans-serif;
 }
 
 /* width */

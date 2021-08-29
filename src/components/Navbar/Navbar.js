@@ -40,7 +40,7 @@ function Navbar({ refs }) {
     <>
       <nav className={`navbar ${scrolled ? 'box-shadow' : ''}`}>
         <button type="button" onClick={() => scrollToRef(refs.current[0])} className="nav-link" aria-label="Navbar Logo">
-          <img src="/wm-red-2.png" alt="Navbar Logo" className="nav-logo" />
+          <img src="/wm-red-2-min.png" alt="Navbar Logo" className="nav-logo" loading="lazy" />
         </button>
 
         <ul className="nav-items">
