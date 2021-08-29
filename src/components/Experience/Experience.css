@@ -135,7 +135,7 @@
 }
 
 .experience-navigator .experience-tab:hover {
-  background-color: #31272a;
+  background-color: var(--bg-primary-3);
   color: var(--primary-3);
 }
 
@@ -157,7 +157,7 @@
 }
 
 .experience-navigator .experience-tab.active {
-  background-color: #31272a;
+  background-color: var(--bg-primary-3);
   color: var(--primary-3);
 }
 

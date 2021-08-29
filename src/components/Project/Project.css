@@ -28,7 +28,7 @@
           align-items: center;
   grid-area: container;
   z-index: 2;
-  background-color: rgba(15, 1, 1, 0.8);
+  background-color: var(--bg-primary-4-shadow);
 }
 
 .section-project-item .project-content .project-overline {
@@ -136,13 +136,13 @@
     background-color: transparent;
   }
   .section-project-item .project-content .project-description {
-    background-color: #21272c;
+    background-color: var(--bg-primary-4);
     padding: 20px;
     margin-top: 20px;
     text-align: right;
     border-radius: 8px;
-    -webkit-box-shadow: 0 10px 30px -10px rgba(15, 1, 1, 0.8);
-            box-shadow: 0 10px 30px -10px rgba(15, 1, 1, 0.8);
+    -webkit-box-shadow: 0 10px 30px -10px var(--bg-primary-4-shadow);
+            box-shadow: 0 10px 30px -10px var(--bg-primary-4-shadow);
   }
   .section-project-item .project-content .project-overline {
     text-align: right;

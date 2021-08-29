@@ -51,7 +51,7 @@ function Navbar({ refs }) {
           <li><button type="button" onClick={() => scrollToRef(refs.current[5])}>Contact Me</button></li>
           <li>
             <label className="switch" htmlFor="switch">
-              <input type="checkbox" id="switch" onClick={changeMode} />
+              <input type="checkbox" id="switch" onClick={changeMode} checked={!darkMode} />
               <span className="slider round" />
             </label>
           </li>
@@ -73,7 +73,7 @@ function Navbar({ refs }) {
             <li><button type="button" onClick={() => closeNav(refs.current[5])}>Contact Me</button></li>
             <li>
               <label className="switch" htmlFor="switch">
-                <input type="checkbox" id="switch" onClick={changeMode} />
+                <input type="checkbox" id="switch" onClick={changeMode} checked={!darkMode} />
                 <span className="slider round" />
               </label>
             </li>

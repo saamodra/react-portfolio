@@ -109,7 +109,7 @@
 }
 
 .education-navigator .education-tab:hover {
-  background-color: #31272a;
+  background-color: var(--bg-primary-3);
   color: var(--primary-3);
 }
 
@@ -131,7 +131,7 @@
 }
 
 .education-navigator .education-tab.active {
-  background-color: #31272a;
+  background-color: var(--bg-primary-3);
   color: var(--primary-3);
 }
 

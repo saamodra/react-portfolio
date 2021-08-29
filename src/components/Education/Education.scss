@@ -77,7 +77,7 @@
         white-space: nowrap;
 
         &:hover {
-            background-color: rgb(49, 39, 42);
+            background-color: var(--bg-primary-3);
             color: var(--primary-3);
 
             &::after {
@@ -98,7 +98,7 @@
         }
 
         &.active {
-            background-color: rgb(49, 39, 42);
+            background-color: var(--bg-primary-3);
             color: var(--primary-3);
 
             &::after {
