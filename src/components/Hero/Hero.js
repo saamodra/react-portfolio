@@ -8,7 +8,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import './Hero.css';
 
-function Hero({ componentRef, contactRef }) {
+function Hero({ componentRef, refs }) {
   return (
     <div className="hero" ref={componentRef}>
       <div className="hero-container">
@@ -16,7 +16,7 @@ function Hero({ componentRef, contactRef }) {
         <h1 className="hero-name">Samodra</h1>
         <h2 className="hero-subname">Currently Student, UI/UX and Web Enthusiast</h2>
         <p className="hero-summary">Vocational high school graduate with a background in web design and development. Currently, I am studying for a Associate&apos;s degree in Informatics Management at Astra Polytechnic.</p>
-        <button type="button" onClick={() => { contactRef.scrollIntoView({ behavior: 'smooth' }); }} className="btn btn-primary btn-outline">Get In Touch</button>
+        <button type="button" onClick={() => { refs.current[5].scrollIntoView({ behavior: 'smooth' }); }} className="btn btn-primary btn-outline">Get In Touch</button>
       </div>
 
       <aside className="hero-left">
