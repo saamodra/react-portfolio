@@ -25,34 +25,34 @@ function App() {
       <Router>
         <a href="#content" className="skip-to-content">Skip to Content</a>
         <header>
-          <Suspense fallback={<div className="loading">Loading...</div>}>
+          <Suspense fallback={<div className="loading" style={{ height: '70px' }}>Loading...</div>}>
             <Navbar refs={refs} />
           </Suspense>
         </header>
         <main>
-          <Suspense fallback={<div className="loading">Loading...</div>}>
+          <Suspense fallback={<div className="loading" style={{ height: '100vh' }} />}>
             <Hero componentRef={(ref) => { refs.current[0] = ref; }} />
           </Suspense>
-          <Suspense fallback={<div className="loading">Loading...</div>}>
+          <Suspense fallback={<div className="loading" style={{ height: '700px' }} />}>
             <About componentRef={(ref) => { refs.current[1] = ref; }} />
           </Suspense>
-          <Suspense fallback={<div className="loading">Loading...</div>}>
+          <Suspense fallback={<div className="loading" style={{ height: '625px' }} />}>
             <Education componentRef={(ref) => { refs.current[2] = ref; }} />
           </Suspense>
-          <Suspense fallback={<div className="loading">Loading...</div>}>
+          <Suspense fallback={<div className="loading" style={{ height: '525px' }} />}>
             <Experience componentRef={(ref) => { refs.current[3] = ref; }} />
           </Suspense>
-          <Suspense fallback={<div className="loading">Loading...</div>}>
+          <Suspense fallback={<div className="loading" style={{ height: '2300px' }} />}>
             <Project componentRef={(ref) => { refs.current[4] = ref; }} />
           </Suspense>
-          <Suspense fallback={<div className="loading">Loading...</div>}>
+          <Suspense fallback={<div className="loading" style={{ height: '380px' }} />}>
             <Contact componentRef={(ref) => { refs.current[5] = ref; }} />
           </Suspense>
           <Switch>
             <Route path="/" exact />
           </Switch>
         </main>
-        <Suspense fallback={<div className="loading">Loading...</div>}>
+        <Suspense fallback={<div className="loading" style={{ height: '117px' }}>Loading...</div>}>
           <Footer />
         </Suspense>
       </Router>
