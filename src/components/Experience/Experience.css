@@ -102,6 +102,7 @@
   width: 100%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  margin-bottom: 20px;
   /* Handle */
 }
 
@@ -125,7 +126,7 @@
   cursor: pointer;
   border: none;
   font-family: var(--sf-mono);
-  padding: 10px;
+  padding: 16px 10px;
   background-color: transparent;
   white-space: nowrap;
   color: var(--f-primary-3);

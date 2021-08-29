@@ -73,6 +73,7 @@
   overflow-y: hidden;
   width: 100%;
   box-sizing: content-box;
+  margin-bottom: 20px;
 
   &::-webkit-scrollbar {
     height: 4px;
@@ -94,7 +95,7 @@
     cursor: pointer;
     border: none;
     font-family: var(--sf-mono);
-    padding: 10px;
+    padding: 16px 10px;
     background-color: transparent;
     white-space: nowrap;
     color: var(--f-primary-3);

@@ -31,7 +31,7 @@ function App() {
         </header>
         <main>
           <Suspense fallback={<div className="loading" style={{ height: '100vh' }} />}>
-            <Hero componentRef={(ref) => { refs.current[0] = ref; }} />
+            <Hero componentRef={(ref) => { refs.current[0] = ref; }} contactRef={refs.current[5]} />
           </Suspense>
           <Suspense fallback={<div className="loading" style={{ height: '700px' }} />}>
             <About componentRef={(ref) => { refs.current[1] = ref; }} />

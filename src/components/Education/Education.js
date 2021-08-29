@@ -3,6 +3,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight';
 import initialData from '../../data/educations';
 import './Education.css';
 
@@ -52,7 +54,7 @@ function Education({ componentRef }) {
                   <ul className="section-description-list">
                     {data.description.map((description) => (
                       <li key={description}>
-                        <i className="fas fa-caret-square-right" />
+                        <FontAwesomeIcon icon={faCaretRight} />
                         <p>{description}</p>
                       </li>
                     ))}

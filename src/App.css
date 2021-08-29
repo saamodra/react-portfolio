@@ -115,6 +115,7 @@ main {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .btn.btn-primary {

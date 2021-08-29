@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart';
 import './Footer.css';
 
 function Footer() {
@@ -10,7 +12,7 @@ function Footer() {
         <p>
           Made with
           {' '}
-          <span className="text-primary">♥</span>
+          <FontAwesomeIcon icon={faHeart} className="text-primary" />
           {' '}
           by Samodra
         </p>

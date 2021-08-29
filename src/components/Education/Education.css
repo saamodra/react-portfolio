@@ -89,6 +89,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .education-navigator .education-tab {
@@ -98,7 +99,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 10px;
+  padding: 16px 10px;
   background-color: transparent;
   color: var(--f-primary-3);
   position: relative;
