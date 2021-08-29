@@ -21,27 +21,27 @@ function Contact({ componentRef }) {
         </a>
         <ul className="contact-links">
           <li>
-            <a href="https://github.com/saamodra" target="_blank" rel="noreferrer">
+            <a href="https://github.com/saamodra" aria-label="Samodra's Github" target="_blank" rel="noreferrer">
               <i className="fab fa-github" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/saamodra/">
+            <a href="https://www.linkedin.com/in/saamodra/" aria-label="Samodra's Linkedin" target="_blank" rel="noreferrer">
               <i className="fab fa-linkedin" />
             </a>
           </li>
           <li>
-            <a href="https://instagram.com/saamodra/">
+            <a href="https://instagram.com/saamodra/" aria-label="Samodra's Instagram" target="_blank" rel="noreferrer">
               <i className="fab fa-instagram" />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/saamodra/">
+            <a href="https://twitter.com/saamodra/" aria-label="Samodra's Twitter" target="_blank" rel="noreferrer">
               <i className="fab fa-twitter" />
             </a>
           </li>
           <li>
-            <a href="mailto:samodra.me@gmail.com">
+            <a href="mailto:samodra.me@gmail.com" aria-label="Samodra's Email" target="_blank" rel="noreferrer">
               <i className="fa fa-envelope" />
             </a>
           </li>

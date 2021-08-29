@@ -17,7 +17,7 @@
 
         p {
             margin-top: 10px;
-            color: var(--f-primary-3);
+            color: var(--f-primary-2);
             font-family: var(--sf-mono);
         }
     }
@@ -77,7 +77,7 @@
         white-space: nowrap;
 
         &:hover {
-            background-color: var(--bg-primary-3);
+            background-color: var(--bg-primary-4);
             color: var(--primary-3);
 
             &::after {
@@ -98,7 +98,7 @@
         }
 
         &.active {
-            background-color: var(--bg-primary-3);
+            background-color: var(--bg-primary-4);
             color: var(--primary-3);
 
             &::after {

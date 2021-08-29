@@ -33,7 +33,7 @@
 
 .section-content-education .section-image p {
   margin-top: 10px;
-  color: var(--f-primary-3);
+  color: var(--f-primary-2);
   font-family: var(--sf-mono);
 }
 
@@ -109,7 +109,7 @@
 }
 
 .education-navigator .education-tab:hover {
-  background-color: var(--bg-primary-3);
+  background-color: var(--bg-primary-4);
   color: var(--primary-3);
 }
 
@@ -131,7 +131,7 @@
 }
 
 .education-navigator .education-tab.active {
-  background-color: var(--bg-primary-3);
+  background-color: var(--bg-primary-4);
   color: var(--primary-3);
 }
 

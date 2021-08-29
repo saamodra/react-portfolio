@@ -39,8 +39,8 @@ function Navbar({ refs }) {
   return (
     <>
       <nav className={`navbar ${scrolled ? 'box-shadow' : ''}`}>
-        <button type="button" onClick={() => scrollToRef(refs.current[0])} className="nav-link">
-          <img src="/wm-red-2.png" alt="" className="nav-logo" />
+        <button type="button" onClick={() => scrollToRef(refs.current[0])} className="nav-link" aria-label="Navbar Logo">
+          <img src="/wm-red-2.png" alt="Navbar Logo" className="nav-logo" />
         </button>
 
         <ul className="nav-items">
@@ -51,14 +51,14 @@ function Navbar({ refs }) {
           <li><button type="button" onClick={() => scrollToRef(refs.current[5])}>Contact Me</button></li>
           <li>
             <label className="switch" htmlFor="switch">
-              <input type="checkbox" id="switch" onClick={changeMode} checked={!darkMode} />
+              <input type="checkbox" id="switch" onChange={changeMode} checked={!darkMode} />
               <span className="slider round" />
             </label>
           </li>
         </ul>
 
         <div className="menu-icon">
-          <button type="button" onClick={handleNavClick}>
+          <button type="button" onClick={handleNavClick} aria-label="Mobile Menu Toggle">
             <i className={showNav ? 'fas fa-times' : 'fas fa-bars'} />
           </button>
         </div>
@@ -72,8 +72,8 @@ function Navbar({ refs }) {
             <li><button type="button" onClick={() => closeNav(refs.current[4])}>Projects</button></li>
             <li><button type="button" onClick={() => closeNav(refs.current[5])}>Contact Me</button></li>
             <li>
-              <label className="switch" htmlFor="switch">
-                <input type="checkbox" id="switch" onClick={changeMode} checked={!darkMode} />
+              <label className="switch" htmlFor="switchAside">
+                <input type="checkbox" id="switchAside" onChange={changeMode} checked={!darkMode} />
                 <span className="slider round" />
               </label>
             </li>

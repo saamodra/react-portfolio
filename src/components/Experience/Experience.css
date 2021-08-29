@@ -41,7 +41,7 @@
   width: 100%;
   margin-top: 10px;
   font-family: var(--sf-mono);
-  color: var(--f-primary-3);
+  color: var(--f-primary-2);
 }
 
 .section-description {
@@ -135,7 +135,7 @@
 }
 
 .experience-navigator .experience-tab:hover {
-  background-color: var(--bg-primary-3);
+  background-color: var(--bg-primary-4);
   color: var(--primary-3);
 }
 
@@ -157,7 +157,7 @@
 }
 
 .experience-navigator .experience-tab.active {
-  background-color: var(--bg-primary-3);
+  background-color: var(--bg-primary-4);
   color: var(--primary-3);
 }
 
