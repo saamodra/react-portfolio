@@ -14,7 +14,6 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   const refs = useRef([]);
-  const aboutRef = useRef([]);
 
   useEffect(() => {
     refs.current = Array(6).fill().map((_, i) => refs.current[i] || React.createRef());

@@ -1,13 +1,14 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar({ refs, aboutRef }) {
+function Navbar({ refs }) {
   const [showNav, setShowNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  // const menuRef = useRef(myRef);
+  const [darkMode, setDarkMode] = useState(true);
 
   const handleNavClick = () => setShowNav(!showNav);
   const closeNav = (ref) => {
@@ -19,12 +20,21 @@ function Navbar({ refs, aboutRef }) {
     ref.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const changeMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   window.addEventListener('scroll', () => {
     const windowPosition = window.scrollY;
     const isScrolled = windowPosition > 50;
 
     setScrolled(isScrolled);
   });
+
+  useEffect(() => {
+    document.body.className = '';
+    document.body.classList.add(darkMode ? 'dark' : 'light');
+  }, [darkMode]);
 
   return (
     <>
@@ -39,6 +49,12 @@ function Navbar({ refs, aboutRef }) {
           <li><button type="button" onClick={() => scrollToRef(refs.current[3])}>Experience</button></li>
           <li><button type="button" onClick={() => scrollToRef(refs.current[4])}>Projects</button></li>
           <li><button type="button" onClick={() => scrollToRef(refs.current[5])}>Contact Me</button></li>
+          <li>
+            <label className="switch" htmlFor="switch">
+              <input type="checkbox" id="switch" onClick={changeMode} />
+              <span className="slider round" />
+            </label>
+          </li>
         </ul>
 
         <div className="menu-icon">
@@ -55,6 +71,12 @@ function Navbar({ refs, aboutRef }) {
             <li><button type="button" onClick={() => closeNav(refs.current[3])}>Experience</button></li>
             <li><button type="button" onClick={() => closeNav(refs.current[4])}>Projects</button></li>
             <li><button type="button" onClick={() => closeNav(refs.current[5])}>Contact Me</button></li>
+            <li>
+              <label className="switch" htmlFor="switch">
+                <input type="checkbox" id="switch" onClick={changeMode} />
+                <span className="slider round" />
+              </label>
+            </li>
           </ul>
         </aside>
       </nav>

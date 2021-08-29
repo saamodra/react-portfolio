@@ -64,16 +64,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: var(--f-primary-1);
   position: relative;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   font-family: var(--sf-mono);
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .navbar .nav-items li button::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   left: 50%;
@@ -82,8 +82,8 @@
   bottom: 0px;
   height: 2px;
   background-color: var(--primary-2);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar .nav-items li button:hover::after {
@@ -109,8 +109,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
   visibility: hidden;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -127,6 +127,10 @@
   width: 100%;
 }
 
+.navbar .aside-nav ul li {
+  text-align: center;
+}
+
 .navbar .aside-nav ul li button {
   width: 100%;
   font-family: var(--sf-mono);
@@ -135,15 +139,15 @@
   text-align: center;
   padding: 25px 0;
   position: relative;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .navbar .aside-nav ul li button::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   left: 50%;
@@ -152,12 +156,76 @@
   bottom: 0px;
   height: 2px;
   background-color: var(--primary-2);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar .aside-nav ul li button:hover::after {
   width: 50%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 20px 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-3);
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px var(--primary-3);
+          box-shadow: 0 0 1px var(--primary-3);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 768px) {
@@ -177,6 +245,9 @@
   .navbar .menu-icon {
     display: none;
   }
+  .switch {
+    margin: 20px 10px;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -187,7 +258,7 @@
     margin-right: 40px;
   }
   .navbar .nav-items li a {
-    font-size: .95em;
+    font-size: 0.95em;
   }
 }
 

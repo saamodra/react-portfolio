@@ -1,5 +1,6 @@
 export default [
   {
+    id: '1',
     menu: 'IDCamp',
     company: 'Indosat Ooredoo Digital Camp',
     role: 'Course Facilitator',
@@ -12,6 +13,7 @@ export default [
     ],
   },
   {
+    id: '2',
     menu: 'Kotakode',
     company: 'Kotakode',
     role: 'Student Mentor',
@@ -24,6 +26,7 @@ export default [
     ],
   },
   {
+    id: '3',
     menu: 'Dicoding Indonesia',
     company: 'Dicoding Indonesia',
     role: 'External Code Reviewer',
@@ -36,6 +39,7 @@ export default [
     ],
   },
   {
+    id: '4',
     menu: 'Universitas Surakarta',
     company: 'Universitas Surakarta',
     role: 'Intern',

@@ -18,8 +18,8 @@ function Project({ componentRef }) {
       </div>
 
       <div className="section-content">
-        {projects.map((data, index) => (
-          <div className="section-project-item">
+        {projects.map((data) => (
+          <div className="section-project-item" key={data.id}>
             <div className="project-content">
               <div>
                 <p className="project-overline">{data.overline}</p>
@@ -29,7 +29,7 @@ function Project({ componentRef }) {
                 <div className="project-links">
                   <ul className="project-tech">
                     {data.tech.map((tech) => (
-                      <li>{tech}</li>
+                      <li key={tech}>{tech}</li>
                     ))}
                   </ul>
 

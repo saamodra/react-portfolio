@@ -12,7 +12,7 @@ function Footer() {
           {' '}
           <i className="fa fa-heart text-primary" />
           {' '}
-          Samodra
+          by Samodra
         </p>
       </div>
     </footer>

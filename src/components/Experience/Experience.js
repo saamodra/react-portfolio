@@ -26,14 +26,22 @@ function Experience({ componentRef }) {
       <div className="section-content-experience">
         <aside className="experience-navigator">
           {experienceData.map((experience, index) => (
-            <button type="button" className={`experience-tab ${tab === index ? 'active' : ''}`} onClick={() => tabChange(index)}>{experience.menu}</button>
+            <button
+              key={experience.id}
+              type="button"
+              className={`experience-tab ${tab === index ? 'active' : ''}`}
+              onClick={() => tabChange(index)}
+            >
+              {experience.menu}
+
+            </button>
           ))}
         </aside>
 
         <div className="overflow-hidden">
           <div className="experience-content-container" style={{ transform: `translateX(-${tab * 100}%)` }}>
-            {experienceData.map((experience, index) => (
-              <div className="experience-content">
+            {experienceData.map((experience) => (
+              <div className="experience-content" key={experience.id}>
                 <div className="experience-title">
                   <h3>
                     {experience.role}
@@ -49,7 +57,7 @@ function Experience({ componentRef }) {
                 <div className="section-description">
                   <ul className="section-description-list">
                     {experience.description.map((desc) => (
-                      <li>
+                      <li key={desc}>
                         <i className="fas fa-caret-square-right" />
                         <p>{parse(desc)}</p>
                       </li>
