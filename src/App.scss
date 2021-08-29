@@ -113,6 +113,14 @@ section {
     margin: 0 auto;
 }
 
+.loading {
+    color: var(--f-primary-1);
+    text-align: center;
+    font-family: var(--sf-mono);
+    font-weight: bold;
+    padding: 40px;
+}
+
 @media screen and (min-width: 480px) {
     section {
         padding: 75px 20px;

@@ -6,6 +6,8 @@ import parse from 'html-react-parser';
 import initialData from '../../data/experiences';
 import './Experience.css';
 
+// const initialData = React.lazy(() => import('../../data/experiences'));
+
 function Experience({ componentRef }) {
   const [tab, setTab] = useState(0);
   const [experienceData, setExperienceData] = useState(initialData);
@@ -59,7 +61,9 @@ function Experience({ componentRef }) {
                     {experience.description.map((desc) => (
                       <li key={desc}>
                         <i className="fas fa-caret-square-right" />
-                        <p>{parse(desc)}</p>
+                        <p>
+                          {parse(desc)}
+                        </p>
                       </li>
                     ))}
                   </ul>

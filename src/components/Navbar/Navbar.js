@@ -2,6 +2,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars as fasFaBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import { faTimes as fasTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -59,7 +62,7 @@ function Navbar({ refs }) {
 
         <div className="menu-icon">
           <button type="button" onClick={handleNavClick} aria-label="Mobile Menu Toggle">
-            <i className={showNav ? 'fas fa-times' : 'fas fa-bars'} />
+            <FontAwesomeIcon icon={showNav ? fasTimes : fasFaBars} />
           </button>
         </div>
 

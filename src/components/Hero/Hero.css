@@ -65,16 +65,13 @@
 .hero-left .hero-contact li a {
   display: inline-block;
   padding: 20px;
-}
-
-.hero-left .hero-contact li a i {
   color: var(--f-primary-2);
   font-size: 1.5em;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
-.hero-left .hero-contact li a:hover i {
+.hero-left .hero-contact li a:hover {
   color: var(--primary-2);
 }
 

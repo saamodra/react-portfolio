@@ -1,6 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import './Hero.css';
 
 function Hero({ componentRef }) {
@@ -17,23 +22,23 @@ function Hero({ componentRef }) {
       <aside className="hero-left">
         <ul className="hero-contact">
           <li>
-            <a href="https://github.com/saamodra" target="_blank" rel="noreferrer">
-              <i className="fab fa-github" />
+            <a href="https://github.com/saamodra" aria-label="Samodra's Github" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/saamodra/">
-              <i className="fab fa-linkedin" />
+            <a href="https://www.linkedin.com/in/saamodra/" aria-label="Samodra's Linkedin" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li>
-            <a href="https://instagram.com/saamodra/">
-              <i className="fab fa-instagram" />
+            <a href="https://instagram.com/saamodra/" aria-label="Samodra's Instagram" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/saamodra/">
-              <i className="fab fa-twitter" />
+            <a href="https://twitter.com/saamodra/" aria-label="Samodra's Twitter" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
         </ul>

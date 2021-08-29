@@ -2,6 +2,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import initialData from '../../data/projects';
 import './Project.css';
 
@@ -33,7 +35,9 @@ function Project({ componentRef }) {
                     ))}
                   </ul>
 
-                  <a href={data.links.github} aria-label={`Github ${data.title}`}><i className="fab fa-github" /></a>
+                  <a href={data.links.github} aria-label={`Github ${data.title}`}>
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
                 </div>
               </div>
             </div>

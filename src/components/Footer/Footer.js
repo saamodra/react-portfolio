@@ -10,7 +10,7 @@ function Footer() {
         <p>
           Made with
           {' '}
-          <i className="fa fa-heart text-primary" />
+          <span className="text-primary">♥</span>
           {' '}
           by Samodra
         </p>

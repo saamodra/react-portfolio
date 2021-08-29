@@ -2,6 +2,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import './Contacts.css';
 
 function Contact({ componentRef }) {
@@ -22,27 +28,27 @@ function Contact({ componentRef }) {
         <ul className="contact-links">
           <li>
             <a href="https://github.com/saamodra" aria-label="Samodra's Github" target="_blank" rel="noreferrer">
-              <i className="fab fa-github" />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/saamodra/" aria-label="Samodra's Linkedin" target="_blank" rel="noreferrer">
-              <i className="fab fa-linkedin" />
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li>
             <a href="https://instagram.com/saamodra/" aria-label="Samodra's Instagram" target="_blank" rel="noreferrer">
-              <i className="fab fa-instagram" />
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/saamodra/" aria-label="Samodra's Twitter" target="_blank" rel="noreferrer">
-              <i className="fab fa-twitter" />
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
           <li>
             <a href="mailto:samodra.me@gmail.com" aria-label="Samodra's Email" target="_blank" rel="noreferrer">
-              <i className="fa fa-envelope" />
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </li>
         </ul>
