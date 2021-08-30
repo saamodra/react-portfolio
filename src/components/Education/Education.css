@@ -81,7 +81,6 @@
   position: relative;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  padding: 0 30px;
 }
 
 .education-navigator {
@@ -138,6 +137,12 @@
 
 .education-navigator .education-tab.active::after {
   background-color: var(--primary-3);
+}
+
+@media screen and (min-width: 425px) {
+  .education-content-container .education-content {
+    padding: 0 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {

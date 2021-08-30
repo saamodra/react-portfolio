@@ -21,7 +21,7 @@ function Contact({ componentRef }) {
       <div className="section-content">
         <p className="contact-description">If you want to collaborate or just want to say &apos;hi&apos;, feel free to contact me.</p>
         <a className="btn btn-primary btn-outline mx-auto" href="mailto:samodra.me@gmail.com">
-          <i className="fa fa-envelope" />
+          <FontAwesomeIcon icon={faEnvelope} />
           {' '}
           Ping!
         </a>

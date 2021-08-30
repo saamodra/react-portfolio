@@ -2,7 +2,7 @@
   "name": "samodra-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://localhost:5500",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -35,7 +35,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build --stats",
+    "build": "react-scripts build",
     "brunch-build": "brunch build -p",
     "test": "react-scripts test",
     "analyze": "webpack-bundle-analyzer build/bundle-stats.json",
