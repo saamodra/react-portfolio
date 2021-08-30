@@ -27,9 +27,9 @@ function About({ componentRef }) {
             Hello! My name is
             {' '}
             <span className="text-name">Samodra</span>
-            . I enjoy learning new things about programming and web technology. Now, I am interested in front end development, especially
+            . Enjoy learning new things about programming and web technology. Currently, I am interested in front end development, especially
             {' '}
-            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">React.js</a>
+            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">ReactJS</a>
             ,
             {' '}
             <a href="https://web.dev/progressive-web-apps/" target="_blank" rel="noreferrer">PWA</a>
