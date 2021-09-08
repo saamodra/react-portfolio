@@ -32,7 +32,7 @@ function Hero({ componentRef, refs }) {
             </a>
           </li>
           <li>
-            <a href="https://instagram.com/saamodra/" aria-label="Samodra's Instagram" target="_blank" rel="noreferrer">
+            <a href="https://instagram.com/samodra.me/" aria-label="Samodra's Instagram" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>
