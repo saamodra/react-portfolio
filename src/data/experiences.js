@@ -19,10 +19,10 @@ export default [
     role: 'Student Mentor',
     date: 'July 2021 - September 2021',
     description: [
-      'Help answer questions from <a href="https://www.kotakode.com/pertanyaan" class="text-primary"> kotakode.com</a> users',
+      'Help answer questions from <a href="https://www.kotakode.com/pertanyaan" class="text-primary"> Kotakode</a> users',
       'Share knowledge by posting programming questions and answers',
-      'Sharing knowledge through microblogging',
-      'Interact and provide assistance for kotakode users',
+      'Share knowledge through microblogging',
+      'Interact and provide assistance for <a href="https://www.kotakode.com/pertanyaan" class="text-primary"> Kotakode</a> users',
     ],
   },
   {
@@ -35,7 +35,6 @@ export default [
       'Review student submission codes on the learning path <a href="https://www.dicoding.com/learningpaths/22" class="text-primary">  Front-End Web</a>',
       'Provide suggestions that students need on the learning path <a href="https://www.dicoding.com/learningpaths/22" class="text-primary">  Front-End Web</a>',
       'Answer questions on the <a href="https://www.dicoding.com" class="text-primary"> Dicoding Discussion Forum</a>',
-      'Interact and provide assistance for kotakode users',
     ],
   },
   {

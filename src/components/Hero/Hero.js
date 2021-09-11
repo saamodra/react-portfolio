@@ -14,7 +14,7 @@ function Hero({ componentRef, refs }) {
       <div className="hero-container">
         <p className="hero-greeting">Hi, my name is</p>
         <h1 className="hero-name">Samodra</h1>
-        <h2 className="hero-subname">Front End Developer and UI/UX Enthusiast</h2>
+        <h2 className="hero-subname">Front-End Developer and UI/UX Enthusiast</h2>
         <p className="hero-summary">College student majoring in Informatics Management. Love problem solving and Happy to help people to solve their problems. Currently, focus on developing skills in the field of Web Development and UI/UX.</p>
         <button type="button" onClick={() => { refs.current[5].scrollIntoView({ behavior: 'smooth' }); }} className="btn btn-primary btn-outline">Get In Touch</button>
       </div>
