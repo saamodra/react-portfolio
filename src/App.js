@@ -3,6 +3,8 @@
 import React, { useRef, useEffect, Suspense } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
+import initializeReactGA from './analytics/initializeGoogleAnalytics';
 
 const Hero = React.lazy(() => import('./components/Hero/Hero'));
 const About = React.lazy(() => import('./components/About/About'));
@@ -17,7 +19,10 @@ function App() {
   const refs = useRef([]);
 
   useEffect(() => {
-    refs.current = Array(6).fill().map((_, i) => refs.current[i] || React.createRef());
+    // Google Analytics
+    initializeReactGA(ReactGA);
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   return (

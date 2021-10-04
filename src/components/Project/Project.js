@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import gaEventsTracker from '../../analytics/gaEventsTracker';
 import initialData from '../../data/projects';
 import './Project.css';
 
@@ -35,7 +36,13 @@ function Project({ componentRef }) {
                     ))}
                   </ul>
 
-                  <a href={data.links.github} aria-label={`Github ${data.title}`}>
+                  <a
+                    href={data.links.github}
+                    onClick={() => gaEventsTracker('External Links', 'Github', data.links.github)}
+                    aria-label={`Github ${data.title}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                 </div>
