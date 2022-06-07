@@ -1,11 +1,25 @@
 export default [
   {
+    id: '5',
+    menu: 'Astra Property',
+    company: 'Astra Property',
+    role: 'Front-End Developer Intern',
+    date: 'January 2022 - June 2022',
+    description: [
+      'Manage and maintenance ReactJS web app My Astra Property Admin Portal',
+      'Manage and maintenance React Native app My Astra Property',
+      'Testing and fix bugs of My Astra Property app',
+      'Create screens documentation of My Astra Property and My Astra Property Admin Portal ',
+    ],
+  },
+  {
     id: '1',
     menu: 'IDCamp',
     company: 'Indosat Ooredoo Digital Camp',
     role: 'Course Facilitator',
-    date: 'August 2021 - October 2021',
+    date: 'August 2021 - January 2022',
     description: [
+      'Course: <a href="https://www.dicoding.com/academies/163" class="text-primary" target="_blank" rel="noreferrer">Fundamental Front-End Web Development</a> & <a href="https://www.dicoding.com/academies/219" class="text-primary" target="_blank" rel="noreferrer">Menjadi Front-End Web Developer Expert</a>',
       'Hold online meetings with IDCamp participants',
       'Monitor the learning progress of IDCamp participants',
       'Create a group as a discussion forum between facilitator and participants',
@@ -14,27 +28,27 @@ export default [
   },
   {
     id: '2',
-    menu: 'Kotakode',
-    company: 'Kotakode',
-    role: 'Student Mentor',
-    date: 'July 2021 - September 2021',
-    description: [
-      'Help answer questions from <a href="https://www.kotakode.com/pertanyaan" class="text-primary"> Kotakode</a> users',
-      'Share knowledge by posting programming questions and answers',
-      'Share knowledge through microblogging',
-      'Interact and provide assistance for <a href="https://www.kotakode.com/pertanyaan" class="text-primary"> Kotakode</a> users',
-    ],
-  },
-  {
-    id: '3',
     menu: 'Dicoding Indonesia',
     company: 'Dicoding Indonesia',
     role: 'External Code Reviewer',
     date: 'July 2021 - Present',
     description: [
-      'Review student submission codes on the learning path <a href="https://www.dicoding.com/learningpaths/22" class="text-primary">  Front-End Web</a>',
-      'Provide suggestions that students need on the learning path <a href="https://www.dicoding.com/learningpaths/22" class="text-primary">  Front-End Web</a>',
-      'Answer questions on the <a href="https://www.dicoding.com" class="text-primary"> Dicoding Discussion Forum</a>',
+      'Review student submission codes on the learning path <a href="https://www.dicoding.com/learningpaths/22" class="text-primary" target="_blank" rel="noreferrer">  Front-End Web</a>',
+      'Provide suggestions that students need on the learning path <a href="https://www.dicoding.com/learningpaths/22" class="text-primary" target="_blank" rel="noreferrer">  Front-End Web</a>',
+      'Answer questions on the <a href="https://www.dicoding.com" class="text-primary" target="_blank" rel="noreferrer"> Dicoding Discussion Forum</a>',
+    ],
+  },
+  {
+    id: '3',
+    menu: 'Kotakode',
+    company: 'Kotakode',
+    role: 'Student Mentor',
+    date: 'July 2021 - September 2021',
+    description: [
+      'Help answer questions from <a href="https://www.kotakode.com/pertanyaan" class="text-primary" target="_blank" rel="noreferrer"> Kotakode</a> users',
+      'Share knowledge by posting programming questions and answers',
+      'Share knowledge through microblogging',
+      'Interact and provide assistance for <a href="https://www.kotakode.com/pertanyaan" class="text-primary" target="_blank" rel="noreferrer"> Kotakode</a> users',
     ],
   },
   {

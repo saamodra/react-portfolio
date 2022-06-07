@@ -5,7 +5,7 @@ export default [
     school: 'Politeknik Astra',
     image: 'polman',
     major: 'Informatics Management',
-    duration: '2019 - 2021',
+    duration: '2019 - 2022',
     description: [
       '1st Winner HIMFEST 2021 Binus University Malang',
       'Robotic Polman Astra (Secretary)',
